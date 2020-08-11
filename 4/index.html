@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<iframe src="./domain-two/index.html"></iframe>
+<div>
+    <form id="setForm" action="post">
+        <fieldset>
+            <legend> Set date</legend>
+            <p><label>key</label><input type="text" name="key" required></p>
+            <p><label>value</label><input type="text" name="value" required></p>
+            <p><input type="submit" value="Set Date"></p>
+        </fieldset>
+    </form>
+
+
+    <form id="deleteForm" action="post">
+        <fieldset>
+            <legend> Delete date</legend>
+            <p><label>key</label><input type="text" name="key" required></p>
+            <p><input type="submit" value="Delete Date"></p>
+        </fieldset>
+    </form>
+
+    <form id="getForm" action="post">
+        <fieldset>
+            <legend> Get date</legend>
+            <p><label>key</label><input type="text" name="key" required></p>
+            <p><input type="submit" value="Get Date"></p>
+            <label>Answer:</label>
+            <div id="text"></div>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+<script src="./index.js"></script>
+</html>
